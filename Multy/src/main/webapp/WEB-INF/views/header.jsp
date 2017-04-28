@@ -15,6 +15,11 @@
     <link href="<c:url value="/resources/css/prettyPhoto.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/main.css"/>" rel="stylesheet">
     <link href="<c:url value="/resources/css/responsive.css"/>" rel="stylesheet">
+    
+    <!-- 추가 css[S] -->
+    	<link href="<c:url value="/resources/css/contents.css"/>" rel="stylesheet">
+    <!-- 추가 css[E] -->
+    
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -24,6 +29,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<c:url value="/resources/images/ico/apple-touch-icon-114-precomposed.png"/>">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<c:url value="/resources/images/ico/apple-touch-icon-72-precomposed.png"/>">
     <link rel="apple-touch-icon-precomposed" href="<c:url value="/resources/images/ico/apple-touch-icon-57-precomposed.png"/>">
+    
 </head><!--/head-->
 
     <header id="header">
@@ -36,20 +42,19 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/Multy"><img src="<c:url value="/resources/images/logo.png"/>" alt="logo"></a>
+                    <a class="navbar-brand" href="/"><span class="headerMenu">(주) 신영산업(임시로고)</span></a>
+<%--                     <a class="navbar-brand" href="/Multy"><img src="<c:url value="/resources/images/logo.png"/>" alt="logo"></a> --%>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li class="scroll active"><a href="<c:url value="/test.do"/>">(주)신영산업</a></li>
-                        <li class="scroll"><a href="#features">용융아연도금</a></li>
-                        <li class="scroll"><a href="#services">자주찾는질문</a></li>
-                        <li class="scroll"><a href="#portfolio">공지사항</a></li>
-                        <li class="scroll"><a href="#about">이메일 문의</a></li>
-                        <li class="scroll"><a href="#meet-team">찾아 오시는 길</a></li>
-<!--                         <li class="scroll"><a href="#pricing">Pricing</a></li> -->
-<!--                         <li class="scroll"><a href="#blog">Blog</a></li>  -->
-<!--                         <li class="scroll"><a href="#get-in-touch">Contact</a></li>                         -->
+                    	<!-- 메뉴 클릭시  class active적용 -->
+                    	<!-- 이전 메뉴에 설정되어있는 class active 삭제하기 -->
+                        <li class="scroll active"><a href="<c:url value="/contents/introduce.do"/>"><span class="headerMenu">회사소개</span></a></li>
+                        <li class="scroll"><a href="<c:url value="/contents/gallery.do"/>"><span class="headerMenu">용융아연도금</span></a></li>
+<!--                         <li class="scroll"><a href="#services"><span class="headerMenu">자주찾는질문</span></a></li> -->
+                        <li class="scroll"><a href="#portfolio"><span class="headerMenu">공지사항</span></a></li>
+                        <li class="scroll"><a href="#meet-team"><span class="headerMenu">찾아 오시는 길</span></a></li>
                     </ul>
                 </div>
             </div><!--/.container-->

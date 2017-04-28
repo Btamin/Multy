@@ -7,30 +7,37 @@
 		
     <section id="main-slider">
         <div class="owl-carousel">
-            <div class="item" style="background-image: url(./resources/images/slider/bg1.jpg);">
+            <div class="item" style="background-image: url(./resources/images/main/main.jpg);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2><span>Multi</span> is the best Onepage html template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
+                                    <!-- 컨텐츠 내용 -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div><!--/.item-->
-             <div class="item" style="background-image: url(./resources/images/slider/bg2.jpg);">
+             <div class="item" style="background-image: url(./resources/images/main/main2.jpg);">
                 <div class="slider-inner">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
-                                    <h2>Beautifully designed <span>free</span> one page template</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et  dolore magna incididunt ut labore aliqua. </p>
-                                    <a class="btn btn-primary btn-lg" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.item-->
+             <div class="item" style="background-image: url(./resources/images/main/main3.jpg);">
+                <div class="slider-inner">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
                                 </div>
                             </div>
                         </div>
@@ -39,7 +46,7 @@
             </div><!--/.item-->
         </div><!--/.owl-carousel-->
     </section><!--/#main-slider-->
-
+<%-- 
     <section id="features">
         <div class="container">
             <div class="section-header">
@@ -101,7 +108,7 @@
 <!--                 <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>MULTI</span> IS A CREATIVE HTML TEMPLATE</h2> -->
 <!--                 <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">Mauris pretium auctor quam. Vestibulum et nunc id nisi fringilla <br />iaculis. Mauris pretium auctor quam.</p> -->
 <!--                 <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"><a class="btn btn-primary btn-lg" href="#">Free Download</a></p> -->
-<%--                 <img class="img-responsive wow fadeIn" src="<c:url value="/resourcesimages/cta2/cta2-img.png"/>" alt="" data-wow-duration="300ms" data-wow-delay="300ms"> --%>
+                <img class="img-responsive wow fadeIn" src="<c:url value="/resourcesimages/cta2/cta2-img.png"/>" alt="" data-wow-duration="300ms" data-wow-delay="300ms">
 <!--             </div> -->
 <!--         </div> -->
 <!--     </section> -->
@@ -938,42 +945,9 @@
                 </div>
             </div>
         </div>
-    </section><!--/#bottom-->
+    </section><!--/#bottom--> --%>
 
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2017 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
-                </div>
-<!--                 <div class="col-sm-6"> -->
-<!--                     <ul class="social-icons"> -->
-<!--                         <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-flickr"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-github"></i></a></li> -->
-<!--                     </ul> -->
-<!--                 </div> -->
-            </div>
-        </div>
-    </footer><!--/#footer-->
+	<%@include file="/WEB-INF/views/footer.jsp" %>
 
-    <script src="<c:url value="/resources/js/jquery.js"/>"></script>
-    <script src="<c:url value="/resources/js/bootstrap.min.js"/>"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script src="<c:url value="/resources/js/owl.carousel.min.js"/>"></script>
-    <script src="<c:url value="/resources/js/mousescroll.js"/>"></script>
-    <script src="<c:url value="/resources/js/smoothscroll.js"/>"></script>
-    <script src="<c:url value="/resources/js/jquery.prettyPhoto.js"/>"></script>
-    <script src="<c:url value="/resources/js/jquery.isotope.min.js"/>"></script>
-    <script src="<c:url value="/resources/js/jquery.inview.min.js"/>"></script>
-    <script src="<c:url value="/resources/js/wow.min.js"/>"></script>
-    <script src="<c:url value="/resources/js/main.js"/>"></script>
 </body>
 </html>
