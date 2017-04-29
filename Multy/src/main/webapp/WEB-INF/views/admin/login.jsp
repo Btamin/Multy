@@ -4,8 +4,6 @@
 
 <body id="home" class="homepage">
 
-	<%@include file="/WEB-INF/views/header.jsp" %>
-
 	<div class="container" style="padding-left:300px;">
 	
 	<div class="form-group" style="padding-top:50px;">
@@ -28,7 +26,5 @@
 	    </div>
 	  </div>
 	</div>
-	<%@include file="/WEB-INF/views/footer.jsp" %>
-	
 
 </body> 
