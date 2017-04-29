@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/WEB-INF/views/decorator">
+
+    
+	<decorator name="layout" page="decoratorContents.jsp">
+		<pattern>/*</pattern> 
+	</decorator> 
+	
+	<!--특정 경로 or 특정 패턴 경로 제외할때 -->
+<!-- <exclude></exclude> -->
+	 
+	
+	
+</decorators>
