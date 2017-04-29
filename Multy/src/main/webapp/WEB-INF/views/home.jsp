@@ -3,7 +3,7 @@
 <html>
 <body id="home" class="homepage">
 
-	<%@include file="/WEB-INF/views/header.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/header.jsp" %> --%>
 		
     <section id="main-slider">
         <div class="owl-carousel">
@@ -947,7 +947,7 @@
         </div>
     </section><!--/#bottom--> --%>
 
-	<%@include file="/WEB-INF/views/footer.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/footer.jsp" %> --%>
 
 </body>
 </html>

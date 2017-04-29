@@ -39,7 +39,6 @@ public class HomeController {
 	public ModelMap contentsView(ModelMap model,HttpServletRequest request) {
 		UrlPathHelper urlPathHelper = new UrlPathHelper();
 		model.addAttribute("url", urlPathHelper.getOriginatingRequestUri(request));
-		System.out.println(model.get("url"));
 		
 		List contensList = new ArrayList();
 		contensList.add("앵글류");
@@ -52,18 +51,6 @@ public class HomeController {
 		contensList.add("돼지우리");
 		contensList.add("파이프 주주류");
 		model.addAttribute("contentsList", contensList);
-		if(model.get("url").equals("/contents/gallery.do")){
-/*			
-			model.addAttribute("contents1", "앵글류");
-			model.addAttribute("contents2", "부품류");
-			model.addAttribute("contents3", "가드레일");
-			model.addAttribute("contents4", "파이플 주주류");
-			model.addAttribute("contents5", "파이프 주주류");
-			model.addAttribute("contents6", "사각 파이프류");
-			model.addAttribute("contents7", "돼지우리");
-			model.addAttribute("contents8", "돼지우리");
-			model.addAttribute("contents9", "파이프 주주류");
-*/		}
 		
 		return model;
 	}

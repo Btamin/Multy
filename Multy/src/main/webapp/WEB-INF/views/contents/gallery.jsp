@@ -3,7 +3,7 @@
 
 <body id="home" class="homepage">
 
-	<%@include file="/WEB-INF/views/header.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/header.jsp" %> --%>
 		<div class="container">
 			<table align="center">
 				<c:forEach begin="0" end="7" varStatus="status">
@@ -18,6 +18,6 @@
 				</c:forEach>
 			</table>
 		</div>	
-	<%@include file="/WEB-INF/views/footer.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/footer.jsp" %> --%>
 	
 </body>

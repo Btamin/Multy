@@ -5,22 +5,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2017 Your Company. Designed by <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>
+                   		주소 : 경북 고령군 다산면 다산산단1길 49-7<br>
+                   		전화번호 : 054-956-2525<br> 
+                   		Fax) : 054-956-2526<br>
+                   		COPYRIGHT &copy; 2017 Sinyoung All rights reserved.
                 </div>
-<!--                 <div class="col-sm-6"> -->
-<!--                     <ul class="social-icons"> -->
-<!--                         <li><a href="#"><i class="fa fa-facebook"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-flickr"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-<!--                         <li><a href="#"><i class="fa fa-github"></i></a></li> -->
-<!--                     </ul> -->
-<!--                 </div> -->
             </div>
         </div>
     </footer><!--/#footer-->

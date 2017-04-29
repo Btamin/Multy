@@ -3,7 +3,7 @@
 
 <body id="home" class="homepage">
 
-	<%@include file="/WEB-INF/views/header.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/header.jsp" %> --%>
 	
 		<div class="row" >
 		  <div class="col-xs-8 col-md-4"><img src="<c:url value="/resources/images/introduce/sign.png"/>"></div>
@@ -119,6 +119,6 @@
 			</table>
        </div>
        
-	<%@include file="/WEB-INF/views/footer.jsp" %>
+<%-- 	<%@include file="/WEB-INF/views/footer.jsp" %> --%>
 		
 </body>

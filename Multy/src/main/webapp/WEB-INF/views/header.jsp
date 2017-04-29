@@ -29,7 +29,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<c:url value="/resources/images/ico/apple-touch-icon-114-precomposed.png"/>">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<c:url value="/resources/images/ico/apple-touch-icon-72-precomposed.png"/>">
     <link rel="apple-touch-icon-precomposed" href="<c:url value="/resources/images/ico/apple-touch-icon-57-precomposed.png"/>">
-    
 </head><!--/head-->
 
     <header id="header">
@@ -50,11 +49,11 @@
                     <ul class="nav navbar-nav">
                     	<!-- 메뉴 클릭시  class active적용 -->
                     	<!-- 이전 메뉴에 설정되어있는 class active 삭제하기 -->
-                        <li class="scroll active"><a href="<c:url value="/contents/introduce.do"/>"><span class="headerMenu">회사소개</span></a></li>
+                        <li class="scroll"><a href="<c:url value="/contents/introduce.do"/>"><span class="headerMenu">회사소개</span></a></li>
                         <li class="scroll"><a href="<c:url value="/contents/gallery.do"/>"><span class="headerMenu">용융아연도금</span></a></li>
-<!--                         <li class="scroll"><a href="#services"><span class="headerMenu">자주찾는질문</span></a></li> -->
                         <li class="scroll"><a href="#portfolio"><span class="headerMenu">공지사항</span></a></li>
                         <li class="scroll"><a href="#meet-team"><span class="headerMenu">찾아 오시는 길</span></a></li>
+<!--                         <li class="scroll active"><a href="#meet-team"><span class="headerMenu">찾아 오시는 길</span></a></li> -->
                     </ul>
                 </div>
             </div><!--/.container-->
