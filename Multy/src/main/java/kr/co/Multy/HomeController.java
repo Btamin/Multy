@@ -29,8 +29,9 @@ public class HomeController extends SqlSessionController{
 	public String home(Locale locale, ModelMap model) throws Exception {
 		
 		// LIST
-		List list = selectList("sample.selectSample");
-		System.out.println(list);
+		
+		/*List list = selectList("sample.selectSample");
+		System.out.println(list);*/
 		
 		// INSERT
 		/*model.addAttribute("a",6);
@@ -39,28 +40,21 @@ public class HomeController extends SqlSessionController{
 		setInsert("sample.insertMember", model);*/
 		
 		// UPDATE
-		model.addAttribute("idx",6);
+		/*model.addAttribute("idx",6);
 		model.addAttribute("id","updateId");
 		model.addAttribute("pass","updatePassword");
 		setInsert("sample.updateMember", model);
 		
 		list = selectList("sample.selectSample");
-		System.out.println(list);
+		System.out.println(list);*/
 		
 		// DELETE
-		
+		/*
 		model.addAttribute("idx", 1);
 		delete("sample.deleteMember",model);
 		list = selectList("sample.selectSample");
 		System.out.println(list);
-		
-		
-		
-		
-		
-		
-		
-		
+		*/
 		return "home";
 	}
 
