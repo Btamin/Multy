@@ -2,6 +2,7 @@ package kr.co.Multy.common;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,8 +29,9 @@ public class SqlSessionController {
 		sqlSession.update(sql, data);
 	}
 	
-	protected void delete(String sql, ModelMap data){
-		sqlSession.delete(sql, data);
+	protected Map getObject(String sql, ModelMap data){
+		HashMap<Object, Object> map = new HashMap<Object, Object>();
+		map = sqlSession.selectOne(sql, data);
+		return map;
 	}
-	
 }
