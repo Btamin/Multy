@@ -7,6 +7,7 @@ Author URL: http://shapebootstrap.net
 /*************************
 *******Typography******
 **************************/
+
 body {
 	padding-top: 100px;
 	background: #fff;
@@ -904,8 +905,10 @@ ul.nostyle i {
 ********* Footer ******
 ************************/
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /* padding-top: 30px;
+  padding-bottom: 30px; */
+  margin-top:-1.9em;
+  height:1.9em;
   color: #fff;
   background: #2e2e2e;
 }

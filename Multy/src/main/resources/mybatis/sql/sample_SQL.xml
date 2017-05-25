@@ -10,7 +10,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 	<!-- #{map에서 가져온 key 값 입력} -->
 	<insert id="insertMember" parameterType="java.util.HashMap">
-		INSERT INTO MEMBER VALUES(#{a},#{b},#{c});
+		INSERT INTO MEMBER VALUES(#{a},#{b},#{c})
 	</insert>
 	
 	<update id="updateMember">

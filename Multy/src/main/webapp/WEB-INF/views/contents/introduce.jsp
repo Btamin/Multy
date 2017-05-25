@@ -6,9 +6,13 @@
 <%-- 	<%@include file="/WEB-INF/views/header.jsp" %> --%>
 	
 		<div class="row" >
-		  <div class="col-xs-8 col-md-4"><img src="<c:url value="/resources/images/introduce/sign.png"/>"></div>
-		  <div class="col-xs-8 col-md-4"><img src="<c:url value="/resources/images/introduce/sahun.png"/>"></div>
-		  <div class="col-xs-8 col-md-4"><img src="<c:url value="/resources/images/introduce/member.png"/>"></div>
+		  <div class="col-xs-8 col-md-2"></div>
+		  <div class="col-xs-8 col-md-10">
+		  <img src="<c:url value="/resources/images/introduce/sign.png"/>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <img src="<c:url value="/resources/images/introduce/sahun.png"/>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <img src="<c:url value="/resources/images/introduce/member.png"/>">
+		  </div>
+		  <!-- <div class="col-xs-8 col-md-4"></div> -->
 <%-- 		  <div class="col-xs-6 col-md-2"></div>
 		  <div class="col-xs-6 col-md-2"><img src="<c:url value="/resources/images/introduce/sign.png"/>"></div>
 		  <div class="col-xs-6 col-md-1"></div>

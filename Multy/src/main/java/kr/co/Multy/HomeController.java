@@ -1,16 +1,18 @@
 package kr.co.Multy;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.apache.ibatis.annotations.Delete;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,34 +30,11 @@ public class HomeController extends SqlSessionController{
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, ModelMap model) throws Exception {
 		
-		// LIST
-		
-		/*List list = selectList("sample.selectSample");
-		System.out.println(list);*/
-		
-		// INSERT
-		/*model.addAttribute("a",6);
-		model.addAttribute("b","idid");
-		model.addAttribute("c","paspas");
-		setInsert("sample.insertMember", model);*/
-		
-		// UPDATE
-		/*model.addAttribute("idx",6);
-		model.addAttribute("id","updateId");
-		model.addAttribute("pass","updatePassword");
-		setInsert("sample.updateMember", model);
-		
-		list = selectList("sample.selectSample");
-		System.out.println(list);*/
-		
-		// DELETE
-		/*
-		model.addAttribute("idx", 1);
-		delete("sample.deleteMember",model);
-		list = selectList("sample.selectSample");
-		System.out.println(list);
-		*/
 		return "home";
+	}
+	
+	public void counting(int i){
+		
 	}
 
 	/**
@@ -64,20 +43,56 @@ public class HomeController extends SqlSessionController{
 	 */
 	@RequestMapping(value = "/contents/*.do", method = RequestMethod.GET)
 	public ModelMap contentsView(ModelMap model, HttpServletRequest request) {
+		Enumeration paramName = request.getParameterNames();
+		while(paramName.hasMoreElements()){
+			String strParmName = (String) paramName.nextElement();
+			model.put(strParmName, request.getParameter(strParmName));
+		}
+		
 		UrlPathHelper urlPathHelper = new UrlPathHelper();
 		model.addAttribute("url", urlPathHelper.getOriginatingRequestUri(request));
+		
+		
 
 		List contensList = new ArrayList();
-		contensList.add("앵글류");
-		contensList.add("부품류");
 		contensList.add("가드레일");
-		contensList.add("파이프주주류");
-		contensList.add("파이프주주류");
-		contensList.add("사각 파이프류");
+		contensList.add("주주");
+		contensList.add("부품");
+		contensList.add("구조물");
 		contensList.add("돼지우리");
 		contensList.add("돼지우리");
-		contensList.add("파이프 주주류");
+		contensList.add("주주");
+		contensList.add("낙석류");
 		model.addAttribute("contentsList", contensList);
+		
+		// 공지사항
+		List resultList = new ArrayList();
+		if(model.get("url").equals("/contents/board.do")){
+			List list = selectList("board.getBoardList");
+			
+			int page = 1;
+			
+			if(model.get("page") != null){
+				page = Integer.parseInt(model.get("page").toString());
+			}
+			
+			int pageUnit = 0;
+				for (Iterator iterator = list.iterator(); iterator.hasNext();) {
+					pageUnit++;
+		     		Map tempMap =(Map) iterator.next();
+		     			if(pageUnit > (page-1)*10 && pageUnit < (page*10)+1){
+				 			resultList.add(tempMap);
+		     			}
+		     		}
+		 
+				model.addAttribute("boardList", resultList);
+				model.addAttribute("total", list.size());
+				model.addAttribute("pasingSize", Integer.parseInt(model.get("total").toString())/10);
+				
+		}
+		
+		System.out.println(model.get("total"));
+		System.out.println(resultList);
 
 		return model;
 	}

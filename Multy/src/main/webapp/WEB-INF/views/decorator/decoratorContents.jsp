@@ -1,4 +1,6 @@
 <%@ page contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
 <!-- 필수 [S] -->
 	<%@ taglib uri="http://www.opensymphony.com/sitemesh/decorator" prefix="decorator" %>
@@ -6,7 +8,7 @@
 <!-- 필수  [E] -->
  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html style="height:100%;">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>(주)신영산업<decorator:title /></title>
@@ -14,7 +16,7 @@
     <decorator:head></decorator:head>
     <!-- //header -->
 </head>
-    <%@include file="/WEB-INF/views/header.jsp" %>
-            <decorator:body ></decorator:body>
-    <%@include file="/WEB-INF/views/footer.jsp" %>
+  		<%@include file="/WEB-INF/views/header.jsp" %>
+          	<decorator:body ></decorator:body>
+  		<%@include file="/WEB-INF/views/footer.jsp" %>
 </html>
