@@ -1,0 +1,20 @@
+CREATE TABLE `member` (
+  `IDX` int(11) NOT NULL,
+  `ID` varchar(50) DEFAULT NULL,
+  `PASS` varchar(100) DEFAULT NULL,
+  `UPD_TMS` datetime DEFAULT NULL,
+  `RECENT` datetime DEFAULT NULL,
+  PRIMARY KEY (`IDX`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `board` (
+  `NO` int(11) NOT NULL COMMENT '번호',
+  `TTL` varchar(100) DEFAULT NULL COMMENT '제목',
+  `CONTENT` text COMMENT '내용',
+  `WRITER` varchar(30) DEFAULT NULL COMMENT '작성자',
+  `HID_YN` varchar(2) DEFAULT NULL COMMENT '삭제여부',
+  `INS_TMS` datetime DEFAULT NULL COMMENT '입력시간',
+  `UPD_TMS` datetime DEFAULT NULL COMMENT '수정시간',
+  PRIMARY KEY (`NO`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;board, member
